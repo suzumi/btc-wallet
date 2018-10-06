@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='./btc.js'></script>
+    <title>簡易ウォレット</title>
+</head>
+<body>
+    <h2>簡易ウォレットだよ</h2>
+    <h3><a href="http://bitcoinfaucet.uo1.net/send.php" target="blank">蛇口(テストネット)はこちら</a></h3>
+    <h3>
+      アドレス：<span id="addr"></span>
+    </h3>
+
+    <h3>残高：<span id="balance"></span> BTC</h3>
+    <div>
+        <h2>送金：</h2>
+        <span>
+            <input type="text" id="s_addr" placeholder="送信先アドレス">
+            <input type="text" id="s_amount" placeholder="数量(Satoshi)">
+            <input type="text" id="s_fee" placeholder="手数料(Satoshi) 1000以上がおすすめ">
+            <div><input type="button" id="sendBtn" value="送金するよ"></div>
+        </span>
+    </div>
+    <!-- wallet.jsを作る必要がある -->
+    <script src="./wallet.js"></script>
+</body>
+</html>
+
